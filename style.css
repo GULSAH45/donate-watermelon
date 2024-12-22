@@ -1,0 +1,306 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-image: url(assets/pics/watermelon.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.95);
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  margin-top: 3rem;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  color: #3cb371;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.form-control {
+  border: 2px solid #eee;
+  padding: 0.8rem;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: #3cb371;
+  box-shadow: 0 0 0 0.2rem rgba(60, 179, 113, 0.25);
+}
+
+label {
+  font-weight: 500;
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+.btn-danger {
+  background-color: #3cb371 !important;
+  border: none !important;
+  padding: 0.8rem 2rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border-radius: 50px !important;
+}
+
+.btn-danger:hover {
+  background-color: #45c17d !important;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(60, 179, 113, 0.3);
+}
+
+.error-text,
+.success {
+  font-size: 0.9rem;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.error-text {
+  color: #dc3545;
+}
+
+.success {
+  background-color: rgba(60, 179, 113, 0.1);
+  color: #3cb371;
+}
+
+/* Responsive düzenlemeler */
+@media (max-width: 768px) {
+  .card {
+    width: 90% !important;
+    margin: 2rem auto;
+  }
+
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
+}
+
+.container {
+  padding-top: 1rem;
+  max-width: 600px !important;
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 100% !important;
+    padding: 1rem;
+  }
+
+  .card {
+    width: 90% !important;
+    margin: 2rem auto;
+  }
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: rgba(60, 179, 113, 0.9) !important;
+  padding: 0.8rem 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: white !important;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.navbar-nav {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+}
+
+.nav-link {
+  color: rgba(255, 255, 255, 0.9) !important;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease;
+  border-radius: 20px;
+  white-space: nowrap;
+}
+
+.nav-link:hover {
+  color: white !important;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.nav-link.active {
+  color: white !important;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Responsive Navbar */
+@media (max-width: 991px) {
+  .navbar-collapse {
+    background-color: rgba(60, 179, 113, 0.95);
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+    max-width: 100%;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+  }
+
+  .nav-item {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .nav-link {
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+/* Navbar Toggle Button */
+.navbar-toggler {
+  border: none;
+  padding: 0.5rem;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.navbar-toggler-icon {
+  width: 1.5em;
+  height: 1.5em;
+}
+
+/* Find page specific styles */
+#peopleList .card {
+  transition: transform 0.3s ease;
+  margin-bottom: 1rem;
+}
+
+#peopleList .card:hover {
+  transform: translateY(-5px);
+}
+
+#peopleList .card-title {
+  color: #3cb371;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+#peopleList .card-text {
+  color: #666;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+#generatePeople {
+  margin-bottom: 2rem;
+  padding: 0.8rem 2rem;
+  font-weight: 500;
+}
+
+.btn-success {
+  background-color: #3cb371 !important;
+  border: none !important;
+  transition: all 0.3s ease;
+}
+
+.btn-success:hover {
+  background-color: #45c17d !important;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(60, 179, 113, 0.3);
+}
+
+/* Find person card styles */
+#peopleList .card {
+  margin: 2rem 0;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border: none;
+}
+
+#peopleList .card-body {
+  background-color: rgba(255, 255, 255, 0.98);
+}
+
+#peopleList .card-title {
+  color: #3cb371;
+  font-weight: 600;
+  font-size: 1.8rem;
+  border-bottom: 2px solid rgba(60, 179, 113, 0.1);
+  padding-bottom: 1rem;
+}
+
+#peopleList .card-text {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #444;
+}
+
+#peopleList .story-container {
+  background-color: rgba(60, 179, 113, 0.05);
+  padding: 1.5rem;
+  border-radius: 10px;
+  height: 100%;
+}
+
+#peopleList .story-text {
+  max-height: 150px;
+  overflow-y: auto;
+  padding-right: 15px;
+  margin-bottom: 0;
+}
+
+/* Custom scrollbar for story */
+#peopleList .story-text::-webkit-scrollbar {
+  width: 6px;
+}
+
+#peopleList .story-text::-webkit-scrollbar-track {
+  background: rgba(60, 179, 113, 0.1);
+  border-radius: 3px;
+}
+
+#peopleList .story-text::-webkit-scrollbar-thumb {
+  background: #3cb371;
+  border-radius: 3px;
+}
+
+/* Button style */
+#peopleList .btn-success {
+  padding: 0.8rem 1.5rem;
+  font-weight: 500;
+  border-radius: 8px;
+}

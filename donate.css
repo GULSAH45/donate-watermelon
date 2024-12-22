@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: url("assets/pics/map.jpg") center/cover no-repeat;
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: overlay;
+}
+
+.navbar {
+  background-color: rgba(60, 179, 113, 0.9) !important;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: white !important;
+}
+
+.nav-link {
+  font-weight: 500;
+  transition: all 0.3s ease;
+  position: relative;
+  padding: 0.5rem 1rem !important;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  background-color: white;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 80%;
+}
+
+.container {
+  padding-top: 1rem;
+  max-width: 600px !important;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.95);
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  margin-top: 3rem;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  color: #3cb371;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.card p {
+  color: #666;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+/* Responsive düzenlemeler */
+@media (max-width: 768px) {
+  .container {
+    max-width: 100% !important;
+    padding: 1rem;
+  }
+
+  .card {
+    width: 90% !important;
+    margin: 2rem auto;
+  }
+
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
+}
+
+/* About sayfası için ek stiller */
+.story-content {
+  line-height: 1.8;
+  color: #444;
+}
+
+.story-content h4 {
+  color: #3cb371;
+  font-weight: 600;
+}
+
+.impact-stats h5 {
+  color: #3cb371;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.impact-stats p {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* Mobil görünüm için */
+@media (max-width: 768px) {
+  .impact-stats .col-md-4 {
+    margin-bottom: 2rem;
+  }
+}
