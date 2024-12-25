@@ -1,0 +1,217 @@
+/* Genel Ayarlar */
+body {
+  font-family: "Poppins", sans-serif;
+  background-image: url(assets/pics/watermelon.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  color: #444;
+}
+/* Navbar Styles */
+.navbar {
+  background-color: rgba(60, 179, 113, 0.9) !important;
+  padding: 0.8rem 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: white !important;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.navbar-nav {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+}
+
+.nav-link {
+  color: rgba(255, 255, 255, 0.9) !important;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease;
+  border-radius: 20px;
+  white-space: nowrap;
+}
+
+.nav-link:hover {
+  color: white !important;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.nav-link.active {
+  color: white !important;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Responsive Navbar */
+@media (max-width: 991px) {
+  .navbar-collapse {
+    background-color: rgba(60, 179, 113, 0.95);
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+    max-width: 100%;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+  }
+
+  .nav-item {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .nav-link {
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+/* Navbar Toggle Button */
+.navbar-toggler {
+  border: none;
+  padding: 0.5rem;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.navbar-toggler-icon {
+  width: 1.1em;
+  height: 1.5em;
+}
+/* Konteyner Ayarları */
+.container {
+  max-width: 800px;
+  margin: 0.75rem auto;
+  padding: 0.5rem;
+}
+
+/* Kart Stilleri */
+.card {
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.card-body {
+  padding: 2rem;
+}
+
+.card-title {
+  font-size: 1.6rem;
+  color: #3cb371;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* Bilgiler */
+.card-text {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #666;
+}
+
+.card-text strong {
+  color: #3cb371;
+}
+
+/* Hikaye Kutusu */
+.story-container {
+  background-color: rgba(60, 179, 113, 0.05);
+  padding: 1.5rem;
+  border-radius: 10px;
+  margin-top: 1rem;
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+.story-container h6 {
+  font-size: 1.1rem;
+  color: #3cb371;
+  margin-bottom: 0.5rem;
+}
+
+.story-text {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #444;
+}
+
+/* Kaydırma Çubuğu */
+.story-text::-webkit-scrollbar {
+  width: 6px;
+}
+
+.story-text::-webkit-scrollbar-track {
+  background: rgba(60, 179, 113, 0.1);
+  border-radius: 3px;
+}
+
+.story-text::-webkit-scrollbar-thumb {
+  background: #3cb371;
+  border-radius: 3px;
+}
+
+/* Buton Stili */
+.btn-success {
+  background-color: #3cb371 !important;
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.8rem 1.5rem;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+.btn-success:hover {
+  background-color: #45c17d !important;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(60, 179, 113, 0.3);
+}
+
+/* Responsive Ayarlar */
+@media (max-width: 768px) {
+  .container {
+    max-width: 95%;
+    padding: 1rem;
+  }
+
+  .card-body {
+    padding: 1.5rem;
+  }
+
+  .card-title {
+    font-size: 1.4rem;
+  }
+
+  .btn-success {
+    padding: 0.7rem 1.2rem;
+    font-size: 0.9rem;
+  }
+}

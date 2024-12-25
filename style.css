@@ -19,7 +19,7 @@ body {
   border-radius: 15px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(10px);
-  margin-top: 3rem;
+  margin-top: 2rem;
   transition: transform 0.3s ease;
 }
 
@@ -87,8 +87,8 @@ label {
 /* Responsive düzenlemeler */
 @media (max-width: 768px) {
   .card {
-    width: 90% !important;
-    margin: 2rem auto;
+    width: 80% !important;
+    margin: 1rem auto;
   }
 
   .navbar-brand {

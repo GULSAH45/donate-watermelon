@@ -8,9 +8,13 @@ const localStorageKey = "personData";
 // API'den kişi bilgisi al
 async function fetchPersonData() {
   const prompt = `
-sen artık bana yardıma ihtiyacı olan bir kişi oluştur ve onun hakkında bir hikaye ver. 
-  bunlar bana eskiden verdiklerin. Bunlardan biri olmasin. 
-  {fullName: kişinin ismi, age:kişinin yaşı, location:kişinin yeri, occupation:kişinin meslegi, requiredAmount:kişinin ihtiyacı olan para miktarı}
+sen artık bana yardıma ihtiyacı olan bir kişi oluştur ve onun hakkında bir hikaye ver.
+ Her seferinde fullName, age, location, story değişsin.her sefer farklı biri oluşturman çok önemli unutma.
+  bu isimler filistinli arap isimleri olsun. layla khalil ismini verip durma. her seferinde farklı biri oluştur.
+  length i aynı olan şeyler verme.
+  {fullName: kişinin ismi, age:kişinin yaşı, location:kişinin yeri, occupation:kişinin meslegi, }
+   tüm içerikler ingilizce olsun. 
+  isimleri verirken her seferinde alfabenin bir sonraki harfiyle ver.
 
   Sadece bunu dön başka hiçbir şey ekleme.
 `;
@@ -59,7 +63,7 @@ function createPersonCard(person) {
             <div class="col-md-3">
               <p class="card-text mb-3">
                 <strong>Occupation:</strong> ${person.occupation}<br>
-                <strong>Required Amount:</strong> <span class="text-success fw-bold">$${person.requiredAmount}</span>
+                
               </p>
               <button class="btn btn-success" onclick="window.location.href='donate.html'">Donate Now</button>
             </div>
